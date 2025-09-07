@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.events {
+    margin-bottom: 20px;
+    background-color: #f4d9d9;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#hoverBox {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    line-height: 150px;
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Dropdown */
+#dropdownMenu {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    background: white;
+}
+#dropdownMenu li {
+    padding: 8px;
+    cursor: pointer;
+}
+#dropdownMenu li:hover {
+    background: #eee;
+}
+
+/* Tabs */
+.tabContent {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+}
+#signupForm {
+    max-width: 500px;
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#signupForm input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+#signupForm button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#signupForm button:hover {
+    background: #0056b3;
+}

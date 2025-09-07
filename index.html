@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Demo</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="events">
+        <h1>Event Handling Basics</h1>
+
+        <!-- Click Example -->
+        <button id="clickBtn">Click Me</button>
+        <p id="clickMessage"></p>
+
+        <!-- Mouseover Example -->
+        <div id="hoverBox">Hover me!</div>
+
+        <!-- Keyboard Input Example -->
+        <input type="text" id="textInput" placeholder="Type something...">
+        <p id="keyboardOutput"></p>
+
+        <!-- Toggle Visibility Example -->
+        <button id="toggleBtn">Show/Hide Secret</button>
+        <p id="secret" class="hidden">Surprise! You found the secret message.</p>
+
+    </div>
+
+    <hr>
+    <h2>Mini Interactive Features</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="modeToggle">Toggle Dark Mode</button>
+
+    <!-- Counter Game -->
+    <div>
+        <h3>Counter Game</h3>
+        <p id="counterValue">0</p>
+        <button id="increaseBtn">Increase</button>
+        <button id="decreaseBtn">Decrease</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div>
+        <h3>FAQ</h3>
+        <button class="faq-question">What is this site?</button>
+        <p class="faq-answer hidden">This is a demo for learning event handling in JavaScript!</p>
+
+        <button class="faq-question">How does it work?</button>
+        <p class="faq-answer hidden">We use DOM manipulation and event listeners 🚀</p>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div>
+        <h3>Dropdown Menu</h3>
+        <button id="dropdownBtn">Menu ⬇️</button>
+        <ul id="dropdownMenu" class="hidden">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+<!-- Tabbed Interface -->
+    <div>
+        <h3>Tabbed Interface</h3>
+        <div>
+            <button class="tabBtn" data-tab="tab1">Tab 1</button>
+            <button class="tabBtn" data-tab="tab2">Tab 2</button>
+            <button class="tabBtn" data-tab="tab3">Tab 3</button>
+        </div>
+        <div id="tab1" class="tabContent">This is Tab 1 content.</div>
+        <div id="tab2" class="tabContent hidden">This is Tab 2 content.</div>
+        <div id="tab3" class="tabContent hidden">This is Tab 3 content.</div>
+    </div>
+
+    <div>
+        <hr>
+        <h2>Form Validation Example</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p id="nameError" class="error"></p>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="Enter your email">
+            <p id="emailError" class="error"></p>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="Enter password">
+            <p id="passwordError" class="error"></p>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+            <p id="confirmPasswordError" class="error"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+<p id="formMessage"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
