@@ -29,51 +29,76 @@
     </div>
 
     <hr>
-    <h2>Mini Interactive Features</h2>
+    <div class="mini-features">
+        <h2>Mini Interactive Features</h2>
 
-    <!-- Light/Dark Mode Toggle -->
-    <button id="modeToggle">Toggle Dark Mode</button>
+        <!-- Light/Dark Mode Toggle -->
+        <button id="modeToggle">Toggle Dark Mode</button>
 
-    <!-- Counter Game -->
-    <div>
-        <h3>Counter Game</h3>
-        <p id="counterValue">0</p>
-        <button id="increaseBtn">Increase</button>
-        <button id="decreaseBtn">Decrease</button>
-    </div>
-
-    <!-- Collapsible FAQ -->
-    <div>
-        <h3>FAQ</h3>
-        <button class="faq-question">What is this site?</button>
-        <p class="faq-answer hidden">This is a demo for learning event handling in JavaScript!</p>
-
-        <button class="faq-question">How does it work?</button>
-        <p class="faq-answer hidden">We use DOM manipulation and event listeners 🚀</p>
-    </div>
-
-    <!-- Dropdown Menu -->
-    <div>
-        <h3>Dropdown Menu</h3>
-        <button id="dropdownBtn">Menu ⬇️</button>
-        <ul id="dropdownMenu" class="hidden">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-
-<!-- Tabbed Interface -->
-    <div>
-        <h3>Tabbed Interface</h3>
+        <!-- Counter Game -->
         <div>
-            <button class="tabBtn" data-tab="tab1">Tab 1</button>
-            <button class="tabBtn" data-tab="tab2">Tab 2</button>
-            <button class="tabBtn" data-tab="tab3">Tab 3</button>
+            <h3>Counter Game</h3>
+            <p id="counterValue">0</p>
+            <button id="increaseBtn">Increase</button>
+            <button id="decreaseBtn">Decrease</button>
         </div>
-        <div id="tab1" class="tabContent">This is Tab 1 content.</div>
-        <div id="tab2" class="tabContent hidden">This is Tab 2 content.</div>
-        <div id="tab3" class="tabContent hidden">This is Tab 3 content.</div>
+
+        <!-- Collapsible FAQ -->
+        <div>
+            <h3>FAQ</h3>
+            <button class="faq-question">What is this site?</button>
+            <p class="faq-answer hidden">This is a demo for learning event handling in JavaScript!</p>
+
+            <button class="faq-question">How does it work?</button>
+            <p class="faq-answer hidden">We use DOM manipulation and event listeners</p>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div>
+            <h3>Dropdown Menu</h3>
+            <button id="dropdownBtn">Menu</button>
+            <ul id="dropdownMenu" class="hidden">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <!-- Tabbed Interface -->
+        <div>
+            <h3>Tabbed Interface</h3>
+            <div>
+                <button class="tabBtn" data-tab="tab1">Tab 1</button>
+                <button class="tabBtn" data-tab="tab2">Tab 2</button>
+                <button class="tabBtn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div id="tab1" class="tabContent">
+                <h3>Event Handling?</h3>
+                <p>Event handling means making your webpage react to these events. <br>
+                    You attach a “listener” to an element, so when the event happens, <br>
+                    some action runs in response. For example, clicking a button might show <br> a message,
+                    or typing in a form might trigger validation.
+                </p>
+            </div>
+            <div id="tab2" class="tabContent hidden">
+                <h3>How it works</h3>
+                <p>
+                    <ol>
+                        <li>A user interacts with the page (click, type, scroll, etc.).</li>
+                        <li>The browser detects this action as an event.</li>
+                        <li>If you’ve set up a listener, your JavaScript code runs and responds.</li>
+                    </ol>
+                </p>
+            </div>
+            <div id="tab3" class="tabContent hidden">
+                <h3>Different Ways to Handle Events</h3>
+                <ul>
+                    <li>Inline handling: putting the action directly in the HTML (not recommended, messy).</li>
+                    <li>Property handling: assigning one action to an element’s event property (works, but limited).</li>
+                    <li>Event listeners: the modern way, where you attach one or multiple handlers cleanly from JavaScript.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div>
@@ -99,7 +124,7 @@
             <button type="submit">Submit</button>
         </form>
 
-<p id="formMessage"></p>
+            <p id="formMessage"></p>
 
     </div>
 
